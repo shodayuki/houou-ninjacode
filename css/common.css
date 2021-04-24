@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,11 +20,13 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body{
   color: #333;
   font-size: 14px;
@@ -32,13 +35,16 @@ body{
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
 ol, ul, li{
   list-style: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 select{
   text-overflow: ellipsis;
   border: none;
@@ -49,22 +55,27 @@ select{
   -webkit-appearance: none;
   appearance: none;
 }
+
 a{
   text-decoration: none;
   color: #333;
 }
+
 a img{
   transition:all 0.3s;
 }
+
 a img:hover{
   opacity: 0.7;
 }
+
 *{box-sizing: border-box;}
 
 /*共通部分ここから*/
 .contents{
   padding-top: 60px;
 }
+
 .inner{
   width: 960px;
   margin: 0 auto;
@@ -81,15 +92,18 @@ a img:hover{
   z-index: 100;
   background: #fff;
 }
+
 .header img{
   width: 100%;
   display: block;
 }
+
 .header-inner{
   position: relative;
   margin: 0 auto;
   height: 100%;
 }
+
 .logo{
   width: 100px;
   position: absolute;
@@ -97,6 +111,7 @@ a img:hover{
   left: 0;
   transform: translateY(-50%);
 }
+
 .menu{
   position: absolute;
   top: 50%;
@@ -104,13 +119,16 @@ a img:hover{
   transform: translateY(-50%);
   font-size: 13px;
 }
+
 .menu a{
   display: inline-block;
   margin-right: 15px;
 }
+
 .menu a:last-child{
   margin-right: 0;
 }
+
 .word-search{
   position: absolute;
   top: 50%;
@@ -125,6 +143,7 @@ a img:hover{
   background-size: 18px;
   outline: none;
 }
+
 .word-submit{
   position: absolute;
   top: 50%;
@@ -138,18 +157,21 @@ a img:hover{
   padding: 0;
   cursor: pointer;
 }
+
 .controls{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
 }
+
 .controls-cart{
   position: relative;
   width: 20px;
   height: 20px;
   display: block;
 }
+
 .controls-cart .cart-batch{
   position: absolute;
   top: -9px;
@@ -170,6 +192,7 @@ a img:hover{
 .c-section{
   margin: 0 auto 60px auto;
 }
+
 .c-section-head{
   display: flex;
   justify-content: space-between;
@@ -177,10 +200,12 @@ a img:hover{
   margin-bottom: 20px;
   border-bottom: 1px solid #f2f2f2;
 }
+
 .c-section-title{
   font-size: 30px;
   font-weight: bold;
 }
+
 .more-link{
   position: relative;
   color: #2996cc;
@@ -188,6 +213,7 @@ a img:hover{
   font-size: 16px;
   padding-right: 15px;
 }
+
 .more-link:after{
   content: "";
   position: absolute;
@@ -199,29 +225,36 @@ a img:hover{
   border-right: 2px solid #2996cc;
   transform: rotate(45deg) translateY(-50%);
 }
+
 .item-list{
   display: flex;
   flex-wrap:wrap;
 }
+
 .item{
   position: relative;
   width: calc(100% / 5);
   margin-bottom: 20px;
 }
+
 .item img{
   width: 100%;
   display: block;
 }
+
 .item-cap{
   margin-bottom: 5px;
 }
+
 .item-info{
   padding: 0 3px;
 }
+
 .item-name{
   font-weight: bold;
   font-size: 16px;
 }
+
 .item-text{
   display: -webkit-box;
   -webkit-box-orient:vertical;
@@ -229,6 +262,7 @@ a img:hover{
   overflow: hidden;
   font-size: 13px;
 }
+
 .item-price{
   margin-top: 5px;
   font-weight: bold;
@@ -238,20 +272,24 @@ a img:hover{
 .thumbnail-list{
   justify-content: space-between;
 }
+
 .thumbnail-list .item{
   width: calc(100% / 2 - 10px);
   padding-bottom: 20px;
   border-bottom: 1px solid #f2f2f2;
 }
+
 .thumbnail-list .item a{
   display: flex;
 }
+
 .thumbnail-list .item-cap{
   width: 100px;
   height: auto;
   margin-right: 15px;
   margin-bottom: 0;
 }
+
 .thumbnail-list .item-info{
   width: calc(100% - 100px - 15px);
 }
@@ -263,11 +301,13 @@ a img:hover{
   margin-bottom: 80px;
   overflow: hidden;
 }
+
 .brand-list{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   grid-gap:10px 10px;
 }
+
 .brand-list li{
   background: #fff;
   border-radius: 8px;
@@ -277,6 +317,7 @@ a img:hover{
   font-weight: bold;
   font-size: 20px;
 }
+
 .brand-list li a{
   display: block;
 }
@@ -285,53 +326,64 @@ a img:hover{
 .footer{
   background: #333;
 }
+
 .footer a{
   color: #fff;
 }
+
 .footer-logo{
   text-align: center;
   font-size: 30px;
   margin-bottom: 30px;
   color: #fff;
 }
+
 .footer-inner{
   padding: 50px 0;
 }
+
 .footer img{
   width: 100%;
 }
+
 .sns{
   text-align: center;
 }
+
 .sns li{
   display: inline-block;
   margin: 0 10px;
 }
+
 .sns li a{
   display: flex;
   align-items: center;
 }
+
 .sns li .sns-icon{
   width: 25px;
   margin-right: 10px;
 }
+
 .footer-link{
   background: #000;
   font-size: 12px;
   padding: 10px;
   text-align: center;
 }
+
 .footer-link li{
   display: inline-block;
   margin: 0 10px;
 }
 
 @media screen and (max-width: 768px){
-  
+
   /*スマホ共通ここから*/
   .contents{
     padding-top: 45px;
   }
+
   .inner{
     width: auto;
     margin: 0 10px;
@@ -341,6 +393,7 @@ a img:hover{
   .header{
     height: 45px;
   }
+
   .header-links{
     position: fixed;
     width: 100%;
@@ -351,27 +404,33 @@ a img:hover{
     z-index: 10;
     transition: all 0.4s;
   }
+
   .logo{
     width: 70px;
   }
+
   .menu{
     top: 40%;
     left: 50%;
     font-size: 15px;
     transform: translate(-50%, -50%);
   }
+
   .word-search{
     width: 160px;
     left: 100px;
     font-size: 11px;
   }
+
   .word-submit{
     left: 100px;
   }
+
   .controls{
     right: 50%;
     transform: translate(50%, -50%);
   }
+
   .menu-trigger{
     position: absolute;
     right: 10px;
@@ -383,6 +442,7 @@ a img:hover{
     z-index: 100;
     display: block;
   }
+
   .menu-trigger span{
     display: inline-block;
     transition: all 0.4s;
@@ -391,13 +451,16 @@ a img:hover{
     height: 2px;
     background: #000;
   }
+
   .menu-trigger span:nth-of-type(1){
     top: 0;
   }
+
   .menu-trigger span:nth-of-type(2){
     top: 50%;
     transform: translateY(-50%);
   }
+
   .menu-trigger span:nth-of-type(3){
     bottom: 0;
   }
@@ -406,26 +469,32 @@ a img:hover{
   .header-links.is-active{
     left: 0;
   }
+
   .menu-trigger.is-active span:nth-of-type(1){
     transform: translateY(9px) rotate(-315deg);
   }
+
   .menu-trigger.is-active span:nth-of-type(2){
     opacity: 0;
   }
+
   .menu-trigger.is-active span:nth-of-type(3){
     transform: translateY(-9px) rotate(315deg);
   }
-  
+
   /*【スマホ】アイテムセクションここから*/
   .c-section-title{
     font-size: 20px;
   }
+
   .more-link{
     font-size: 13px;
   }
+
   .item{
     width: calc(100% / 2);
   }
+
   .item-name{
     font-size: 13px;
   }
@@ -440,34 +509,28 @@ a img:hover{
     padding: 25px 15px;
     margin-bottom: 80px;
   }
+
   .brand-list{
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   }
+
   .brand-list li{
     height: 50px;
     line-height: 50px;
     font-size: 16px;
   }
-  
+
   /*【スマホ】フッターここから*/
   .footer-inner{
     padding: 30px 0;
   }
+
   .sns li{
     font-size: 10px;
   }
+
   .footer-link li{
     font-size: 10px;
     margin: 0 3px;
   }
-  
-  
-
 }
-
-
-
-
-
-
-
